@@ -1,0 +1,39 @@
+html{
+    font-size: 85px;  /* This HTML will be used only when we use rem in code */
+}
+#div1{
+    height: 4rem;
+    width: 6rem;
+    background-color: #e91e63;
+    /* border-width: 6px; This border width have  all 4 sides equal i.e 4px 
+     border-width: 6px 8px; This border width 6px is for top and bottom side and 8px for right and left side 
+     border-width: 6px 8px 10px 12px;  This border width 6px for top, 8px for right, 10px for bottom and 12px for left (CLOCKWISE ghum lo border ka)
+    border-style: solid;
+    border-color: black; */
+    border: 6px solid black; /* This is shortcut of all border width, border style and border color in 1 border properties
+    in order of width, style and color */
+    border-radius: 15px;  / BOrder radius rounds the corner border body part */
+    
+}
+#div2{
+    height: 50%;
+    width: 50%;
+    background-color: rgb(161, 34, 207);
+}
+#Para{
+    font-size: 25px ;
+     border: 4px solid red;
+     border-radius: 10px;
+    /* border-left: 3px solid red; */
+    
+}
+#div3{
+    height: 2rem;
+    width: 6rem;
+    background-color: teal;
+    border-radius: 40px/50px;  /*horizontal radius/vertical radius */
+
+    /* div3 is writteen for ellptical form  */
+
+
+}

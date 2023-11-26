@@ -1,0 +1,20 @@
+html{
+    font-size: 80px;  /* This HTML is used only when you use rem in code */
+}
+#div1{
+   /* height: 200px; This is parent height */
+   /* width: 300px;  This is parent width */
+    background-color: #ff9800;
+    /* height: 100vh; vh is viewput height i.e relative to the entire browser window size */ 
+    /* width: 100vw;  vw is viewput width i.e reative to the entire browser window size  */ 
+     height: 4rem; /* rem is relative to font size of root element(root element means HTML element) */
+     width: 6rem; /* rem is relative to font size of root element(root element means HTML element)  */
+}
+ #div2{
+    height: 50%; /*Relative to parent height i.e 200px */
+    width: 50%;  /*Relative to parent width i.e 300px */
+    background-color: black;
+}
+
+
+/* em is relative to font size of parent element */

@@ -1,0 +1,50 @@
+body{
+    margin: 0px;
+}
+/* BODY HEADER */
+#body-header{
+    height: 65vh;
+    background-image: url("Resumeimage/Backgroundimage.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+/*HORIZONTAL LISTS*/
+.horizontal-list{
+    list-style: none;
+    padding: 0px;
+    margin-top: 0px;
+    font-size: 20px;
+}
+.horizontal-list li{
+    display: inline-block;
+    margin: 4px 30px 10px 30px;
+}
+.text-center{
+    text-align: center;
+}
+.horizontal-list li a{
+    text-decoration: none;
+    color: aliceblue;
+    transition: color 0.5s border-bottom 5s;
+    
+}
+.horizontal-list li a:hover{
+    color: blue;
+    border-bottom: 1px solid black;
+}
+/* NAME AND SOCIAL ICONS*/
+#name-social-container{
+    margin: 32vh;
+}
+.text-right{
+    text-align: right;
+}
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    color: aliceblue;
+    font-weight: 1000;
+}

@@ -1,0 +1,18 @@
+#div1{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+}
+#div2{
+    background-color: cyan;
+    height: 200px;
+    width: 200px;
+    margin-left: -4px;  /* this margin left is used to reduce the space b/w div1 and div2 */
+}
+span{
+    display: block; /* this is 1st display property which convert inline into block */
+}
+div{
+    display: inline-block; /* this is 3rd display property where element can sit next to each other, 
+    height and width of the element can be set now, vertical margins are allowed */
+}

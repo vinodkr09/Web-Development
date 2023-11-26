@@ -1,0 +1,9 @@
+#div1{
+    height: 200px;
+    width: 200px;
+   /* background-color: rgb(96, 50, 50);  by rgb value where r is red, g is green and b is blue  */
+   /* background-color: rgba(45, 60, 85, 0.8 ); by rgba value where a is alpha i.e opacity ranges from 0 t0 10 */
+   /* background-color: hsl(120, 46%, 27%); by hsl value where "h" represent hue which is degree on the color wheel from 0 to 360,
+   "s" represent saturation which is in %, "L" represent the lightness which is also in % */
+     background-color: hsla(240, 60%, 70%, 0.7);  
+}

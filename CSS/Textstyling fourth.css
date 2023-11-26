@@ -1,0 +1,10 @@
+#sample-para{
+    font-size: 25px;
+    color: brown;
+    /* font-weight: lighter; */
+    font-weight: 900; /* font weight can also be written in number  */
+    text-align: justify;
+    line-height: 35px;
+    text-transform: capitalize; /* capitalize means 1st word of every letter is capital*/
+    text-decoration: underline;
+}

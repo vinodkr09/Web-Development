@@ -1,0 +1,11 @@
+#logo{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("background image.jpg");  /* You can specify more than one image by separating the URLs with a comma*/
+    background-size: contain;  /* we can give background size either "contain" or "cover" according to your convenience use 
+    and also we can write size in pixel also */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed; /* using bakground attacment as "fixed" background image will not move while scrooling mouse*/
+
+}

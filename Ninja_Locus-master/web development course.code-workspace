@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../c++by Coding Ninja"
+		},
+		{
+			"path": "../../PROJECT"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "web development course"
+	}
+}

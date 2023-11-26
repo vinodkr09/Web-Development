@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Media Element</title>
+    </head>
+    <body>
+        <audio controls>
+            <source src="audio song.mp3" type="audio/mp3"> <!-- Here we can use both relative or absolute link-->
+            <source src="audio song.avi" type="audio/avi"> <!--we have used multiple source tag of same file bcz if one will not support then another will support-->
+             Browser does not support the audio format <!-- this text will show when audio does not support-->
+        </audio>
+        <br>
+        <video controls height="200" width="300">
+            <source src="https://pwdown.com/14411/Kamariya%20-%20Stree%20(HD%20Video%20Song).mp4" type="video/mp4"> <!--absolute link-->
+            Browser does not support the video format. <!--This text will show when video does not support-->
+        </video>
+        <br>
+        <figure>
+            <img src="flower.jpg" height="300" width="500">
+            <figcaption>Fig.1 kya mast flower photo</figcaption>
+        </figure>
+
+    </body>
+</html>

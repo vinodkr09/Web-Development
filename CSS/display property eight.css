@@ -1,0 +1,17 @@
+#div1{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+}
+#div2{
+    background-color: cyan;
+    height: 200px;
+    width: 200px;
+}
+span{
+    display: block; /* this is 1st display property which convert inline into block */
+}
+div{
+    display: inline; /* this is the 2nd display property which convert block to inline but element doesn't starts in a new line,
+   only takes up as much width as necessary, so cannot set height and width and also the vertical margins do not work in this */
+}

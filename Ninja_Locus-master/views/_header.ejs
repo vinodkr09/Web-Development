@@ -1,0 +1,108 @@
+<header id="nav-container">
+    <div id="app-name">
+        <a href="/">
+            <img id="app-logo" class="animate__animated animate__fadeInRightBig" src="<%= assetPath('images/Ninja-Locus-favicon-v1.png') %>" alt="">
+        </a>
+        <span>Ninja <br> Locus</span>
+    </div>
+
+    <% if (locals.user){ %>
+    <div id="search-bar-conatiner">
+        <div id="search-bar">
+            <input name="name" oninput="searchEngineClass.handleSearch()" onfocusout="searchEngineClass.setOriginal()" placeholder="Search by name ..." autocomplete="off">
+            <i class="fas fa-search"></i>
+        </div>
+        <ul id="searched-users" type="none">
+            <!-- <li>Name</li>
+            <li>Name</li>
+            <li>Name</li> -->
+        </ul>
+    </div>
+    <% } %>
+    
+    <ul id="nav-menu-list" type = "none">
+        <% if (locals.user){ %>
+            <li id="nav-user-name">
+                <a href="/users/profile/<%= locals.user.id %>">
+                    <span><%= user.name %></span>
+                </a>
+            </li>
+
+            <li>
+                <!-- user's avatar -->
+                <img id="nav-avatar" src="<%= user.avatar %>" alt="image" onerror="this.onerror=null;this.src='/images/Users-avatar.png';">
+
+                <!-- side menu displayed when avatar is clicked -->
+                <ul id="nav-side-menu-list" type = "none">
+                    <li style="position: relative; background-color: transparent;">
+                        <span id="nav-side-menu-list-close">
+                            <i class="far fa-window-close"></i>
+                        </span>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="fas fa-home"></i>
+                            <span>Home Page</span>
+                        </a>
+                    </li>
+                    <li class="displayNoneInDesktopView">
+                        <a href="/" onclick="openNinjaSectionOfHomePage(event)">
+                            <i class="fas fa-user-ninja"></i>
+                            <span>Ninjas</span>
+                        </a>
+                    </li>
+                    <li class="displayNoneInDesktopView">
+                        <a href="/" onclick="openFeedPostsSectionOfHomePage(event)">
+                            <i class="fab fa-phoenix-framework"></i>
+                            <span>Feed Posts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/users/profile/<%= locals.user.id %>">
+                            <i class="fas fa-user-alt"></i>
+                            <span>Profile Page</span>
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </li>
+                    <li>
+                        <a href="/users/sign-out" id="sign-out">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Sign Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+        <% }else{ %>
+
+            <li>
+                <a href="/users/sign-in">
+                    <button type="button" class="nav-button">Sign In</button>
+                </a>
+            </li>
+
+            <li>
+                <a href="/users/sign-up">
+                    <button type="button" class="nav-button">Sign Up</button>
+                </a>
+            </li>
+
+
+        <% } %>
+    </ul>
+
+</header>
+
+
+<% if (locals.user){ %>
+    <script src="<%= assetPath('js/header.js') %>"></script>
+
+    <script src="<%= assetPath('js/search_engine.js') %>"></script>
+    <script>
+        const searchEngineClass = new searchEngine();
+    </script>
+<% } %>

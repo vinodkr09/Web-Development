@@ -1,0 +1,30 @@
+html{
+    font-size: 40px;
+}
+#outer-div1{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    /* margin: 10px; All 4 sides margin will have equal value i.e 10px */
+   /* margin: auto; auto margin place the element in centre of screen by the browser itself only to horizontal margin and 
+    vertical margin becomes zero */
+    /* margin-top: 70px; */
+    margin-bottom: 50px ;
+
+}
+#inner-div1{
+    height: 50%;
+    width: 50%;
+    background-color: darkolivegreen;
+}
+#outer-div2{
+    height: 200px;
+    width: 200px;
+    background-color: darkblue;
+    margin-top: 50px;
+}
+
+
+/*When two elements are positioned vertically, then the top and bottom margins of elements are collapsed into single margin,
+if top and bottom have same margin value then they do not add up the value i.e the space b/w them remains same for e.g 50px.
+If any value either top or bottom margin the one which have largest value will considered for the space b/w them */
