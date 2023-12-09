@@ -5,6 +5,9 @@ var accountPassword = " 78081856"
 let accountState
 
 //accountId = 68456   //not allowed bcz we have written constant keyword
+/*
+	Prefer not to use var bcz of issue in block scope and functional scope
+*/
 accountEmail = "vinod.krmahi@gmail.com"
 accountPassword = "96027564"
 accountCity = "Kolkata"
