@@ -60,3 +60,19 @@ console.log(Object.entries(tinderUser)); // returns an array of arrays containin
 
 
 console.log(tinderUser.hasOwnProperty('id')); // check if property exists or not so output: true
+
+
+
+// Objects Destructuring in javascript
+const course = {
+    coursename: "js in hindi",
+    price:  "199",
+    courseInstructor: "Hitesh sir"
+}
+const  {coursename,price,courseInstructor}=course; // this is destructring
+const {courseInstructor: Instructor} = course // This is also destructring you can give any variable name instead of courseInstructor
+console.log(coursename , price , courseInstructor ); // output : js in hindi 199 Hitesh sir
+console.log(Instructor) // Output is Hitesh sir
+
+
+
