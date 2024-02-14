@@ -35,7 +35,7 @@ console.log(person.greetingsTwo()) // Output Hello JS User Bhubaneswer
 /* IMPORTANT FOR INTERVIEW PURPOSE */
 const mysym = Symbol("key1")  // here symbol is datatype
 let object = {
-   [mysym]: "mykey2",    // Here we are adding key value pair to the empty object using Symbol data type.
+   [mysym]: "mykey2"    // Here we are adding key value pair to the empty object using Symbol data type.
 };
 console.log(object[mysym]); // Output: mykey2
 // Remember how to access symbol  property in JavaScript for interview purpose
