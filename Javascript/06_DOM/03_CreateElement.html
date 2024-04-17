@@ -9,6 +9,7 @@
     <body style="background-color: #212121; color: #fff;"></body>
 </body>
 <script>
+    // create  a div element 
     const div = document.createElement('div');
     console.log(div); // Logs the created element to the console
     div.className = "main"
@@ -16,11 +17,21 @@
     div.setAttribute("title", "generated title")
     div.style.backgroundColor = "green"
     div.style.padding = "12px"
-    //div.innerText = "Chai aur code"
+
+    //and give it some content
     const addText = document.createTextNode("chai aur code")
-    div.appendChild(addText);
+
+    // add the text node to the div
+    div.appendChild(addText);   // append means to add  text or HTML elements in this case we are adding a Text Node
+    
+    //add the  div with its content into the body of our page
     document.body.appendChild(div);
 
 
 </script>
-</html>
+</html>  
+
+
+
+
+
