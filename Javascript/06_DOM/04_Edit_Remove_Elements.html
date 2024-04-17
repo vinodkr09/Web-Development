@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code DOM</title>
+</head>
+<body style="background-color: #212529; color: white;">
+      <ul class="language">
+        <li>Javascript</li>
+      </ul>
+    
+</body>
+<script>
+    function addLanguage(langName){
+        const list = document.createElement('li')
+        list.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(list)
+    }
+    // Adding langauge to the languages list
+    addLanguage("python")
+    addLanguage("java")
+
+
+// IN a optimize way
+function optimizedAddLang(langName){
+    const list  = document.createElement('li');
+    const addText = document.createTextNode(langName);
+    list.appendChild(addText);
+    document.querySelector('.language').appendChild(list);
+
+}
+optimizedAddLang('golang')
+optimizedAddLang('ruby')
+
+// Edit Elements: replace 'python' with 'Mojo'
+const secondLang = document.querySelector('li:nth-child(2)')  // don't give space after : or nth-child(n), it will throw error in the language list
+// secondLang.innerHTML = "Mojo" -> not optimized one
+const newlist = document.createElement('li')
+newlist.textContent = "Mojo"
+secondLang.replaceWith(newlist)
+
+// Edit Elements : replace 'javascript' with 'Typescript'
+const firstLang = document.querySelector('li:first-child')
+firstLang.outerHTML = '<li>TypeScript</li>'
+
+
+// Remove Elements: remove 'Golang'
+const fourthLang = document.querySelector('li:nth-child(4)')
+fourthLang.remove()
+
+</script>
+</html>
