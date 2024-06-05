@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="Stop"> Stop </button>
+</body>
+<script>
+    const saysaket = function(){
+        console.log("chiks so beautifyul");
+    }
+
+    const changeText= function(){
+        document.querySelector('h1').innerHTML = "Best javascript series"
+    }
+
+    setTimeout(changeText, 2000)  // here 2000 is time i.e in mili second (2 second)
+    setTimeout(saysaket, 2000)  // here 2000 is time i.e in mili second (2 second)
+
+    const changeMe = setTimeout(changeText, 2000)
+    document.querySelector('#Stop').addEventListner('click', function(){
+       clearTimeout(changeMe)
+       console.log("STOPPED")
+    })
+</script>
+</html>
